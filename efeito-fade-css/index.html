@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Fade</title>
+    <style>
+        .texto {
+            position: relative;
+            overflow: hidden;
+            max-height: 200px;
+        }
+
+        .texto::before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(transparent 100px, white);
+        }
+
+        .leia-mais a {
+            display: inline-block;
+            font-size: 14px;
+            color: #FFF;
+            background-color: #00B1E1;
+            padding: 5px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="texto">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum, modi atque fuga itaque animi quidem maxime neque inventore autem reiciendis velit ducimus porro doloribus optio id nihil non. Consequuntur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit iste iusto dignissimos aut quidem ab voluptatem ea, natus sapiente veritatis ducimus nostrum mollitia molestiae harum. Nam, consequuntur? Vel, omnis?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum, modi atque fuga itaque animi quidem maxime neque inventore autem reiciendis velit ducimus porro doloribus optio id nihil non. Consequuntur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit iste iusto dignissimos aut quidem ab voluptatem ea, natus sapiente veritatis ducimus nostrum mollitia molestiae harum. Nam, consequuntur? Vel, omnis?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum, modi atque fuga itaque animi quidem maxime neque inventore autem reiciendis velit ducimus porro doloribus optio id nihil non. Consequuntur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit iste iusto dignissimos aut quidem ab voluptatem ea, natus sapiente veritatis ducimus nostrum mollitia molestiae harum. Nam, consequuntur? Vel, omnis?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum, modi atque fuga itaque animi quidem maxime neque inventore autem reiciendis velit ducimus porro doloribus optio id nihil non. Consequuntur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit iste iusto dignissimos aut quidem ab voluptatem ea, natus sapiente veritatis ducimus nostrum mollitia molestiae harum. Nam, consequuntur? Vel, omnis?</p>
+    </div>
+    <div class="leia-mais">
+        <a href="#">Leia Mais</a>
+    </div>
+</body>
+</html>
