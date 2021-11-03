@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.box-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-div div {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background: blue;
+}
+
+.box-div div:nth-child(2n+1) {
+    background: red;
+}
