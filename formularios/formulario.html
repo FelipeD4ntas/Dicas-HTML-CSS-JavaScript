@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="get">
+        <h2>Crie sua Conta do Hello Pizza</h2>
+        <fieldset>
+            <legend>Conta:</legend>
+            <div>
+                <label for="e-mail">Email:</label>
+            <input type="email" id="e-mail" name="user_email" placeholder="Digite seu e-mail" required minlength="5" maxlength="250">
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="user_senha" placeholder="Digite sua senha">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Pessoal</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="user_name" placeholder="Ex: Bruno"/>
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="user_fone" placeholder="Ex: (99) 99999-9999"/>
+            </div>
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" id="masculino" name="user_sex" value="Masculino" checked/>
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="feminino" name="user_sex" value="Feminino"/>
+                <label for="feminino">Feminino</label>
+            </div>
+            <div>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="user_nasc"/>
+            </div>
+            <div>
+                <label for="img">Foto de perfil:</label>
+                <input type="file" id="img" name="user_photo" accept="image/*"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div>
+                <label for="rua">Rua</label>
+                <input type="text" id="rua" name="rua_endereço"/>
+            </div>
+            <div>
+                <label for="numero">Número</label>
+                <input type="number" id="numero" name="numero_endereço" min="0" max="9999"/>
+            </div>
+            <div>
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" name="complemento_endereço"/>
+            </div>
+            <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade_endereço"/>
+            </div>
+            <div>
+                <label for="estado">Estado</label>
+                <select name="estado_endereço" id="estado">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SG">Sergipe</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Anuncio:</legend>
+            <div>
+                <label for="anuncio">Como conheceu o HelloPizza:</label>
+                <textarea id="anuncio" placeholder="Conte a sua historia e diga para a gente como conheceu a melhor pizzaria do Brasil" rows="10" name="feedback"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="ofertas" name="enviar_ofertas" checked/>
+                <label for="ofertas">Desejo receber ofertas por e-mail</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Finalizar cadastro"/>
+    </form>
+</body>
+</html>
